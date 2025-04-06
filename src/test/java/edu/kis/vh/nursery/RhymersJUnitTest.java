@@ -3,8 +3,26 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
+/**
+ * Klasa testująca działanie metod z klasy DefaultCountingOutRhymer.
+ *
+ * Metody:
+ * - testCountIn()
+ *      testuje działanie metody countIn(int)
+ * - testCallCheck()
+ *      testuje działanie metody callCheck()
+ *  - testIsFull()
+ *      testuje działanie metody isFull()
+ * - testPeekaboo()
+ *      testuje działanie metody peekaboo()
+ * - testCountOut()
+ *      testuje działanie metody countOut()
+ */
 public class RhymersJUnitTest {
 
+    /**
+     * testuje działanie metody countIn(int)
+     */
     @Test
     public void testCountIn() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
@@ -15,6 +33,9 @@ public class RhymersJUnitTest {
         Assert.assertEquals(testValue, result);
     }
 
+    /**
+     * testuje działanie metody callCheck()
+     */
     @Test
     public void testCallCheck() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
@@ -27,6 +48,9 @@ public class RhymersJUnitTest {
         Assert.assertFalse(result);
     }
 
+    /**
+     * testuje działanie metody isFull()
+     */
     @Test
     public void testIsFull() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
@@ -41,6 +65,9 @@ public class RhymersJUnitTest {
         Assert.assertTrue(result);
     }
 
+    /**
+     * testuje działanie metody peekaboo()
+     */
     @Test
     public void testPeekaboo() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
@@ -58,6 +85,9 @@ public class RhymersJUnitTest {
         Assert.assertEquals(testValue, result);
     }
 
+    /**
+     * testuje działanie metody countOut()
+     */
     @Test
     public void testCountOut() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
